@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MailApplication.controllers.AddMatterMailOfficerController">
+   <children>
+      <JFXButton fx:id="cancleBtn" buttonType="RAISED" layoutX="566.0" layoutY="458.0" onAction="#handleCancleBtnOnAction" ripplerFill="#b21414" style="-fx-background-color: #c9c9c9;" text="Cancel" textFill="#222121" />
+      <JFXButton fx:id="okBtn" buttonType="RAISED" layoutX="639.0" layoutY="458.0" onAction="#handleOkBtnOnAction" ripplerFill="#2c9a65" style="-fx-background-color: #c9c9c9;" text="OK" textFill="#222121" />
+      <Label layoutX="129.0" layoutY="75.0" text="Add Matter Mail :" />
+      <TextField fx:id="senderNameTextField" layoutX="261.0" layoutY="117.0" promptText="Sender name" />
+      <TextField fx:id="roomTextField" layoutX="261.0" layoutY="163.0" promptText="Receiver Room" />
+      <TextField fx:id="sizeTextField" layoutX="262.0" layoutY="230.0" promptText="Packing size" />
+      <TextField fx:id="priorityTextField" layoutX="261.0" layoutY="329.0" promptText="Priority" />
+      <TextField fx:id="officerNameTextField" layoutX="261.0" layoutY="283.0" promptText="Officer Name" />
+      <Label fx:id="addLetterLabel" layoutX="452.0" layoutY="430.0" prefHeight="17.0" prefWidth="244.0" textFill="#c31f1f" />
+      <Label layoutX="318.0" layoutY="258.0" text="(EX.  22.9*30.5 cm.)" textFill="#9a9a9a">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="358.0" text="(EX.  urgent, nonurgent)" textFill="#9a9a9a">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="548.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/stam15.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="338.0" layoutY="206.0" text="(EX.  A107, A504)" textFill="#9a9a9a">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="191.0" text="Building name + Floor +No. room" textFill="#9a9a9a">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MailApplication.controllers.FirstPageSystemAdministratorController">
+   <children>
+      <Label layoutX="40.0" layoutY="35.0" text="HELLO &quot; System Administrator &quot;" />
+      <JFXButton fx:id="logoutBtn" buttonType="RAISED" layoutX="132.0" layoutY="441.0" onAction="#handleLogoutBtnOnAction" ripplerFill="#bc3131" style="-fx-background-color: e4c8c8;" text="Logout" textFill="#8d3a3a" />
+      <TableView fx:id="usersOfficerTable" layoutX="40.0" layoutY="60.0" prefHeight="364.0" prefWidth="402.0" />
+      <Label layoutX="491.0" layoutY="21.0" text="Selected User" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="54.0" text="Name :" />
+      <Label fx:id="nameLabel" layoutX="529.0" layoutY="54.0" textFill="#0073ff" />
+      <TextField fx:id="statusTextField" layoutX="525.0" layoutY="78.0" />
+      <Label layoutX="475.0" layoutY="83.0" text="Status :" />
+      <JFXButton fx:id="updateStatusBtn" buttonType="RAISED" layoutX="580.0" layoutY="123.0" onAction="#handleUpdateStatusBtnOnAction" ripplerFill="#4799ab" style="-fx-background-color: #a9c3c9;" text="UpdateStatus" textFill="#0066ff" />
+      <Label layoutX="486.0" layoutY="150.0" text="Add User" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" layoutX="471.0" layoutY="178.0" promptText="Name" />
+      <TextField fx:id="usernameTextField" layoutX="471.0" layoutY="211.0" promptText="Username" />
+      <TextField fx:id="passwordTextField" layoutX="471.0" layoutY="244.0" promptText="Password" />
+      <JFXButton fx:id="addBtn" buttonType="RAISED" layoutX="605.0" layoutY="300.0" onAction="#handleAddBtnOnAction" ripplerFill="#1c6f68" style="-fx-background-color: #aeccca;" text="Add" textFill="#19724d" />
+      <Label layoutX="478.0" layoutY="327.0" text="Change Password" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newpasswordTextField" layoutX="476.0" layoutY="421.0" promptText="NewPassword" />
+      <JFXButton fx:id="changeBtn" buttonType="RAISED" layoutX="595.0" layoutY="459.0" onAction="#handleChangeBtnOnAction" ripplerFill="#942c70" style="-fx-background-color: #aec0d3;" text="Change" textFill="#153a5e" />
+      <Label layoutX="525.0" layoutY="105.0" text="(NORMAL/SUSPENDED)" textFill="#979797">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="yourUsernameTextField" layoutX="476.0" layoutY="353.0" promptText="Your username" />
+      <TextField fx:id="oldpasswordTextField" layoutX="476.0" layoutY="391.0" promptText="OldPassword" />
+      <Label fx:id="addLabel" layoutX="472.0" layoutY="281.0" prefHeight="17.0" prefWidth="215.0" textFill="#b52828" />
+      <Label fx:id="updateStatusLabel" layoutX="478.0" layoutY="128.0" prefHeight="17.0" prefWidth="115.0" textFill="#b52828" />
+      <Label fx:id="changePasswordLabel" layoutX="349.0" layoutY="464.0" prefHeight="17.0" prefWidth="247.0" textFill="#b52828" />
+   </children>
+</AnchorPane>

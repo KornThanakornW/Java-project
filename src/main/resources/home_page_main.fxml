@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MailApplication.controllers.HomePageMainController">
+   <children>
+      <ImageView fitHeight="504.0" fitWidth="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/mailbox3.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="502.0" layoutX="368.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="203.0" />
+      <ImageView fitHeight="504.0" fitWidth="334.0" layoutX="368.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/mailb0x5.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#383838bb" height="504.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="702.0" />
+      <JFXButton layoutX="597.0" layoutY="280.0" onAction="#handleOpenSignInBtnOnAction" style="-fx-border-width: 1.5px; -fx-border-radius: 5px; -fx-border-color: #D1D1D1;" text="Sign In" textFill="#d1d1d1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0000005d" height="504.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="370.0" />
+      <JFXButton layoutX="46.0" layoutY="280.0" onAction="#handleOpenSignUpBtnOnAction" style="-fx-border-width: 1.5px; -fx-border-radius: 5px; -fx-border-color: #D1D1D1;" text="Sign Up" textFill="#d1d1d1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="46.0" layoutY="142.0" text="Don't Have An Account?" textFill="#d1d1d1">
+         <font>
+            <Font name="Avenir Light Oblique" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="535.0" layoutY="150.0" text="Have An Account?" textFill="#d1d1d1">
+         <font>
+            <Font name="Avenir Light Oblique" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="188.0" text="MAIL ROOM is a desktop application" textFill="#d1d1d1">
+         <font>
+            <Font name="Avenir Light Oblique" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="213.0" text="that collect document about mail. " textFill="#d1d1d1">
+         <font>
+            <Font name="Avenir Light Oblique" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="188.0" text="MAIL ROOM is a desktop application" textFill="#d1d1d1">
+         <font>
+            <Font name="Avenir Light Oblique" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="213.0" text="that collect document about mail. " textFill="#d1d1d1">
+         <font>
+            <Font name="Avenir Light Oblique" size="13.0" />
+         </font>
+      </Label>
+      <VBox fx:id="vbox" layoutX="-1.0" prefHeight="504.0" prefWidth="370.0" style="-fx-background-color: #ffff;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MailApplication.controllers.SecondPageOfficerController">
+   <children>
+      <Label layoutX="80.0" layoutY="47.0" text="Manage mail" underline="true" />
+      <JFXButton fx:id="logoutBtn" buttonType="RAISED" layoutX="625.0" layoutY="452.0" onAction="#handleLogoutBtnOnAction" ripplerFill="#bc3868" style="-fx-background-color: #e7d4d4;" text="Logout" textFill="#ae2929" />
+      <JFXButton fx:id="switchBtn" layoutX="225.0" layoutY="42.0" onAction="#handleSwitchBtnOnAction" prefHeight="27.0" prefWidth="201.0" ripplerFill="#b21a89" style="-fx-background-color: #e8cee1;" text="Switch to  Manage resident user" textFill="#861b61" />
+      <Label layoutX="188.0" layoutY="47.0" text="or" textFill="#a4a4a4" />
+      <TableView fx:id="mailTable" layoutX="56.0" layoutY="105.0" prefHeight="349.0" prefWidth="432.0" />
+      <JFXButton fx:id="addLetterBtn" buttonType="RAISED" layoutX="577.0" layoutY="103.0" onAction="#handleAddLetterBtnOnAction" ripplerFill="#006f57" style="-fx-background-color: #b9dad3;" text="Add Letter" textFill="#004d1a" />
+      <Label layoutX="500.0" layoutY="108.0" text="- Add mail:" />
+      <Label layoutX="62.0" layoutY="88.0" text="All Mail" textFill="#949494">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="499.0" layoutY="239.0" text="- Receive:" />
+      <JFXButton fx:id="changeStatusBtn" buttonType="RAISED" layoutX="583.0" layoutY="378.0" onAction="#handleChangeStatusMailBtnOnAction" ripplerFill="#006f57" style="-fx-background-color: #b8c9d0;" text="Change Status" textFill="#09455b" />
+      <Label fx:id="changeStatusLabel" layoutX="515.0" layoutY="352.0" prefHeight="17.0" prefWidth="164.0" textFill="#c31f1f" />
+      <Label layoutX="499.0" layoutY="262.0" text="Arrived in:" textFill="#838383" />
+      <Label layoutX="499.0" layoutY="289.0" text="Room:" textFill="#757474" />
+      <Label fx:id="timeLabel" layoutX="563.0" layoutY="262.0" prefHeight="17.0" prefWidth="124.0" textFill="#026bd3" />
+      <Label fx:id="roomLabel" layoutX="550.0" layoutY="289.0" prefHeight="17.0" prefWidth="114.0" textFill="#0b7beb" />
+      <JFXButton fx:id="addMatterMailBtn" buttonType="RAISED" layoutX="549.0" layoutY="147.0" onAction="#handleAddMMBtnOnAction" ripplerFill="#006f57" style="-fx-background-color: #b9dad3;" text="Add Matter Mail" textFill="#004d1a" />
+      <JFXButton fx:id="addParcelPostBtn" buttonType="RAISED" layoutX="549.0" layoutY="194.0" onAction="#handleAddPPBtnOnAction" ripplerFill="#006f57" style="-fx-background-color: #b9dad3;" text="Add Parcel Post" textFill="#004d1a" />
+      <Label layoutX="532.0" layoutY="158.0" text="or" textFill="#a4a4a4">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="532.0" layoutY="205.0" text="or" textFill="#a4a4a4">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="receiverName" layoutX="549.0" layoutY="317.0" prefHeight="27.0" prefWidth="133.0" promptText="receiverName" />
+      <Label layoutX="499.0" layoutY="322.0" text="Name:" textFill="#757474" />
+      <JFXButton fx:id="receivedMailBtn" buttonType="RAISED" layoutX="56.0" layoutY="459.0" onAction="#handleReceivedBtnOnAction" ripplerFill="#e4743c" style="-fx-background-color: #ead19b;" text="Received Mail" textFill="#4d3300" />
+      <JFXButton fx:id="notReceivedMailBtn" buttonType="RAISED" layoutX="162.0" layoutY="459.0" onAction="#handleNotReceivedBtnOnAction" ripplerFill="#e4743c" style="-fx-background-color: #ead19b;" text="Not Receive Mail" textFill="#4d3300" />
+      <JFXButton fx:id="searchMailBtn" buttonType="RAISED" layoutX="283.0" layoutY="459.0" onAction="#handleSearchBtnOnAction" ripplerFill="#e4743c" style="-fx-background-color: #ead19b;" text="Seach by room No." textFill="#4d3300" />
+   </children>
+</AnchorPane>

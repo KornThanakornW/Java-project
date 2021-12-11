@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MailApplication.controllers.ReceivedMailController">
+   <children>
+      <Button fx:id="backBtn" mnemonicParsing="false" onAction="#handleBackBtnOnAction" style="-fx-background-color: transparent;" text="&lt;--">
+         <font>
+            <Font name="Avenir Heavy" size="19.0" />
+         </font>
+      </Button>
+      <TableView fx:id="receivedMailTable" layoutX="72.0" layoutY="53.0" prefHeight="432.0" prefWidth="557.0" />
+      <Label layoutX="92.0" layoutY="32.0" text="Received Mail" textFill="#949494">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

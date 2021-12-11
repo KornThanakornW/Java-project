@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MailApplication.controllers.DeveloperInfoController">
+   <center>
+      <AnchorPane prefHeight="151.0" prefWidth="700.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="700.0" layoutX="344.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/profileBackgroung.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="484.0" fitWidth="316.0" layoutX="22.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/profilePic.jpg" />
+               </image>
+               <effect>
+                  <ColorAdjust saturation="-0.44" />
+               </effect>
+            </ImageView>
+            <Button fx:id="backBtn" layoutX="14.0" mnemonicParsing="false" onAction="#handleBackBtnOnAction" opacity="0.63" prefHeight="51.0" prefWidth="57.0" style="-fx-background-color: transparent;" text="&lt;--" textFill="WHITE">
+               <font>
+                  <Font name="Avenir Heavy" size="19.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
